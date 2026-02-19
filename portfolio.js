@@ -73,7 +73,7 @@ contactForm.addEventListener('submit', function(event) {
     submitBtn.style.opacity = "0.7";
     submitBtn.disabled = true;
 
-    // These IDs come from your EmailJS Dashboard
+    // EmailJS Dashboard tings
     const serviceID = 'service_wbkeg69';
     const templateID = 'template_bwb06vo';
 

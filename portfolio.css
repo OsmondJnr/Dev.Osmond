@@ -25,6 +25,10 @@ p {
     color: var(--gray-text);
 }
 
+input {
+    border-radius: 10px !important;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -107,12 +111,12 @@ nav {
     white-space: nowrap;
     border-right: 2px solid var(--primary-color);
     width: 0;
-    animation: typing 3s steps(18, end) forwards, blink 0.7s ease 1 5s forwards;
+    animation: typing 3s steps(22, end) forwards, blink 0.7s ease 1 5s forwards;
 }
 
 @keyframes typing {
     from{ width: 0;}
-    to { width: 18ch;}
+    to { width: 22ch;}
 }
 
 @keyframes blink {
@@ -133,13 +137,11 @@ h1 { font-size: 4rem; margin-bottom: 1rem; }
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.4s;
 }
 
 .btn:hover {
-    background: var(--primary-color);
-    color: #000;
     box-shadow: 0 0 20px var(--primary-color);
 }
 
