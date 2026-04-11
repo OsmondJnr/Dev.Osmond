@@ -1,0 +1,118 @@
+.contact {
+    padding: 2rem 10% 4rem;
+}
+
+.contact_header {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact_header h2 {
+    font-family: var(--bold-font);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    line-height: 1.05;
+    color: var(--text-color);
+}
+
+.contact_header p {
+    max-width: 58ch;
+}
+
+.contact_grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.contact_card {
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015));
+    border-radius: 18px;
+    padding: 1rem;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.contact_card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 60, 0, 0.5);
+}
+
+.contact_icon,
+.contact_arrow {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    background: rgba(34, 211, 238, 0.08);
+    border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.contact_copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.contact_copy strong {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.contact_copy small {
+    color: var(--gray-text);
+}
+
+.contact_arrow {
+    margin-left: auto;
+}
+
+.contact_direct {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact_mailto {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(34, 211, 238, 0.35);
+    background: rgba(34, 211, 238, 0.1);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact_mailto:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+    .contact_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .contact {
+        padding-top: 1rem;
+    }
+
+    .contact_grid {
+        grid-template-columns: 1fr;
+    }
+}
